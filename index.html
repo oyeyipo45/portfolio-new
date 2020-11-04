@@ -1,15 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="Portfolio for a full stack developer"
-    />
-    <title>Damilola Oyeyipo Portfolio</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Portfolio for a full stack developer" />
+		<link rel="icon" href="./assests/images/favico.png" />
+		<link rel="stylesheet" href="./assests/css/style.css" />
+		<link rel="stylesheet" href="./assests/scss/style.scss" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<title>Damilola Oyeyipo Portfolio</title>
+	</head>
+	<body>
+		<header class="l-header"> 
+			<nav class="nav bd-grid">
+				<div>
+					<a href="#" class="nav_logo">Damilola</a>
+				</div>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active">Home</a>
+						</li>
+						<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+						<li class="nav__item"><a href="#skills" class="nav__link">Skill</a></li>
+						<li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+						<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+					</ul>
+				</div> 
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="bx bx-menu"></i>
+				</div>
+			</nav>
+		</header>
+		<main class="l-main">
+			<section class="home bd-grid" id="home">
+				<div class="home__data">
+					<h1 class="home__title">
+						Hi, <br />
+						I'am <span class="home__title-color">Damilola,</span> <br />
+						Full Stack Developer <br />
+					</h1>
+					<a href="#" class="button">Contact</a>
+				</div>
+				<div class="home__social">
+					<a href="#" class="home__social-icon"
+						><i class="bx bxl-linkedin"></i
+					></a>
+					<a href="#" class="home__social-icon"
+						><i class="bx bxl-github"></i
+					></a>
+					<a href="#" class="home__social-icon"
+						><i class="bx bxl-github"></i
+					></a>
+				</div>
+				<div class="home__img">
+					<img
+						src="./assests/images/20200919_013137-removebg-preview.png"
+						class="homer_img"
+						alt="developer's face"
+					/>
+				</div>
+			</section>
+
+			<section class="about section" id="about">
+				<h2 class="section-title">About</h2>
+				<div class="about__container bd-grid">
+					<div class="about__img">
+						<img
+							src="./assests/images/20200919_013137.jpg"
+							alt="developer's face"
+						/>
+					</div>
+
+					<div>
+						<h2 class="about__subtitle">I'm Damilola</h2>
+						<p class="about__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
+							quis? Ipsa, ipsum incidunt temporibus odit molestiae, architecto
+							veniam distinctio doloremque amet id illum quaerat possimus sit
+							magnam at culpa laborum?
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="skills section" id="skills">
+				<h2 class="section-title">Skills</h2>
+				<div class="skills__container bd-grid">
+					<div>
+						<div class="skills__subtitle">Professional Skills</div>
+						<div class="skills__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+							error sunt sequi officiis id. Non quia quam deserunt eveniet
+							laboriosam quas iure rem, quae perspiciatis ratione eaque esse
+							ipsam architecto.
+						</div>
+					</div>
+
+					<div>
+						<h2 class="">Front End Technologies</h2>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">  HTML5  </span> 
+                                <i class="bx skills__icon bxl-html5"></i></div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name"> CSS 3 </span> <i class="bx skills__icon bxl-css3"></i></div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">	Javascript (ES6) </span> <i class="bx skills__icon bxl-javascript"></i>
+							</div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">
+                                React (With Hooks)
+                            </span>
+                            <i class="bx skills__icon bxl-react"></i>
+							</div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">Redux 
+                                </span><i class="bx skills__icon bxl-redux"></i>
+                            </div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">
+                                Bootstrap
+                            </span>
+                             <i class="bx skills__icon bxl-bootstrap"> </i>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<h2 class="">Back End Technologies</h2>
+                        <div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">  NODE </span> 
+                                <i class="bx skills__icon bxl-nodejs"></i></div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name"> EXPRESS JS </span> <i class="bx skills__icon bxl-css3"></i></div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">	MongoDb </span> <i class="bx skills__icon bxl-javascript"></i>
+							</div>
+						</div>
+						<div class="skills__data">
+							<div class="skills__names">
+                                <span class="skills__name">
+                                PostgreSql and MySql
+                            </span>
+                            <i class="bx skills__icon bxl-react"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+            
+            <section class="work setion" id="work">
+                <div class="section-title">Work</div>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="./assests/images/20200917_151825.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="./assests/images/20200917_151825.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="./assests/images/20200917_151825.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="./assests/images/20200917_151825.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="./assests/images/20200917_151825.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="./assests/images/20200917_151825.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">
+                    Contact
+                </h2>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input"/>
+                        <input type="mail" placeholder="Email" class="contact__input"/>
+                        <textarea  name="" id="" cols="0" class="contact__input" rows="10"></textarea>
+                        <input type="button" value="Send" class="contact__button button" />
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        
+        
+        <footer class="footer">
+             <p class="footer__title">Damilola</p> 
+             
+             <div class="footer__social">
+                <a href="#" class="footer__icon"><i class="bx skills__icon bxl-twitter"></i></a>
+                 <a href="#" class="footer__icon"><i class="bx skills__icon bxl-facebook"></i></a>
+                 <a href="#" class="footer__icon"><i class="bx skills__icon bxl-instagram"></i></a>
+                 
+             </div>
+             <p> &#169;2020 copyright all rights reserved</p>
+        </footer>
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="./assests/js/main.js"></script>
+	</body>
 </html>
