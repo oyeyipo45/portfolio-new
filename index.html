@@ -14,6 +14,8 @@
 		<title>Damilola Oyeyipo Portfolio</title>
 	</head>
 	<body>
+		
+
 		<header class="l-header">
 			<nav class="nav bd-grid">
 				<div>
@@ -151,11 +153,11 @@
 						</div>
 					</div>
 				</div>
+				
 			</section>
 
-			
-
 			<section class="work section" id="work">
+			
 				<h2 class="section-title">Projects</h2>
 
 				<div class="work__container bd-grid">
@@ -215,18 +217,18 @@
 					</div>
 						
 					<div class="contact__form ">
-						<form action="POST" name="contact" class="" data-netlify="true">
-							<input type="text" name="name" placeholder="Name" class="contact__input" />
-							<input type="email" name="email address" placeholder="Email" class="contact__input" />
+						<form action="" method="POST" name="contact" class="" data-netlify="true">
+							<input type="text" name="name" placeholder="Name" class="contact__input" required/>
+							<input type="email" name="email address" placeholder="Email" class="contact__input" required/>
 							<textarea
 								name="message"
 								placeholder="Enter Message"
 								id=""
 								cols="0"
 								class="contact__input"
-								rows="10"
+								rows="6"
+								required
 							></textarea>
-							<div data-netlify-recaptcha="true"></div>
 							<input type="submit" value="Send" class="contact__button button" />
 						</form>
 					</div>
@@ -250,33 +252,11 @@
 				></a>
 			</div>
 			<p>&#169;D.O  2020 Built By: Damilola Oyeyipo</p>
+			
 		</footer>
 
+		
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="./assests/js/main.js"></script>
 	</body>
 </html>
-
-
-
-<!-- <section class="about section" id="about">
-    <h2 class="section-title">About</h2>
-    <div class="about__container bd-grid">
-        <div class="about__img">
-            <img
-                src="./assests/images/20200919_013137.jpg"
-                alt="developer's face"
-            />
-        </div>
-
-        <div>
-            <h2 class="about__subtitle">I'm Damilola</h2>
-            <p class="about__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
-                quis? Ipsa, ipsum incidunt temporibus odit molestiae, architecto
-                veniam distinctio doloremque amet id illum quaerat possimus sit
-                magnam at culpa laborum?
-            </p>
-        </div>
-    </div>
-</section> -->

@@ -338,6 +338,18 @@ section {
 	color: var(--first-color);
 }
 
+
+.scroll-up {
+	display: fixed;
+	right: 0;
+	bottom: 0;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	font-size: 4rem;
+	color: var(--first-color);
+}
+
+
 /* work  section*/
 .work {
 	text-align: center;
@@ -503,7 +515,7 @@ input:focus {
 	width: 100%;
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-semi);
-	padding: 1rem;
+	padding: .7rem;
 	border-radius: 0.5rem;
 	border: 1px solid rgb(156, 153, 216);
 	outline: none;
