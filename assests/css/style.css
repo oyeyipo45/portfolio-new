@@ -644,7 +644,7 @@ input:focus {
 
 	.work__container {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
+		/* grid-template-rows: repeat(2, 1fr); use when I add extra projects */ 
 		column-gap: 2rem;
 	}
 
