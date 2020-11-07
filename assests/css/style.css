@@ -61,6 +61,24 @@ body {
 	font-size: var(--normal-font-size);
 }
 
+body::-webkit-scrollbar {
+	width: 1rem; }
+  
+  body::-webkit-scrollbar-track {
+	  border-left: 1px solid rgb(188, 207, 235);
+	background-color: white; }
+  
+  body::-webkit-scrollbar-thumb {
+	height: 10px;
+	border-radius: 20px;
+	background-color: var(--first-color); 
+}
+  
+  body::-webkit-scrollbar-button {
+	display: none; }
+
+
+
 h1,
 h2,
 p {
@@ -517,7 +535,7 @@ input:focus {
 	font-weight: var(--font-semi);
 	padding: .7rem;
 	border-radius: 0.5rem;
-	border: 1px solid rgb(156, 153, 216);
+	border: 1px solid rgb(165, 178, 209);
 	outline: none;
 	margin-bottom: var(--mb-2);
 }
