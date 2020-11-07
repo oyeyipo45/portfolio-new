@@ -83,6 +83,10 @@ img {
 	display: block;
 }
 
+textarea {
+	font-family: var(--body-font);
+}
+
 /* sections  */
 
 .section-title {

@@ -182,7 +182,7 @@
 							<p><h3>Technologies</h3> React Js, ContextApi, Bootstrap, JavaScript</p></p>
 							<div class="work__links">
 								<a href ="https://github.com/oyeyipo45/Budget-management-app" target=_blank class="work__button">Github</a>
-								<a href="https://daily-budget-management.herokuapp.com/" target=_blank class="work__button">Active</a>
+								<a href="https://daily-budget-management.herokuapp.com/" target=_blank class="work__button">View Project</a>
 							</div>
 							</div>
 						</div>
@@ -215,18 +215,19 @@
 					</div>
 						
 					<div class="contact__form ">
-						<form action="" class="">
-							<input type="text" placeholder="Name" class="contact__input" />
-							<input type="mail" placeholder="Email" class="contact__input" />
+						<form action="POST" name="contact" class="" data-netlify="true">
+							<input type="text" name="name" placeholder="Name" class="contact__input" />
+							<input type="email" name="email address" placeholder="Email" class="contact__input" />
 							<textarea
-								name=""
+								name="message"
 								placeholder="Enter Message"
 								id=""
 								cols="0"
 								class="contact__input"
 								rows="10"
 							></textarea>
-							<input type="button" value="Send" class="contact__button button" />
+							<div data-netlify-recaptcha="true"></div>
+							<input type="submit" value="Send" class="contact__button button" />
 						</form>
 					</div>
 				</div>
