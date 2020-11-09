@@ -62,22 +62,23 @@ body {
 }
 
 body::-webkit-scrollbar {
-	width: 1rem; }
-  
-  body::-webkit-scrollbar-track {
-	  border-left: 1px solid rgb(188, 207, 235);
-	background-color: white; }
-  
-  body::-webkit-scrollbar-thumb {
+	width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+	border-left: 1px solid rgb(188, 207, 235);
+	background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
 	height: 10px;
 	border-radius: 20px;
-	background-color: var(--first-color); 
+	background-color: var(--first-color);
 }
-  
-  body::-webkit-scrollbar-button {
-	display: none; }
 
-
+body::-webkit-scrollbar-button {
+	display: none;
+}
 
 h1,
 h2,
@@ -163,7 +164,7 @@ section {
 .nav_logo {
 	color: var(--first-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
 	.nav__menu {
 		position: fixed;
 		top: var(--header-height);
@@ -344,18 +345,12 @@ section {
 .skills__name {
 	margin-left: var(--mb-1);
 	color: black;
-	
 }
-
-
-
-
 
 .skills__icon {
 	font-size: 2rem;
 	color: var(--first-color);
 }
-
 
 .scroll-up {
 	display: fixed;
@@ -366,7 +361,6 @@ section {
 	font-size: 4rem;
 	color: var(--first-color);
 }
-
 
 /* work  section*/
 .work {
@@ -533,7 +527,7 @@ input:focus {
 	width: 100%;
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-semi);
-	padding: .7rem;
+	padding: 0.7rem;
 	border-radius: 0.5rem;
 	border: 1px solid rgb(165, 178, 209);
 	outline: none;
@@ -596,7 +590,8 @@ input:focus {
 	}
 }
 
-@media screen and (min-width: 766px) {
+
+@media screen and (min-width: 767px) {
 	.section {
 		padding-top: 4rem;
 		padding-bottom: 3rem;
@@ -662,7 +657,7 @@ input:focus {
 
 	.work__container {
 		grid-template-columns: repeat(2, 1fr);
-		/* grid-template-rows: repeat(2, 1fr); use when I add extra projects */ 
+		/* grid-template-rows: repeat(2, 1fr); use when I add extra projects */
 		column-gap: 2rem;
 	}
 
@@ -707,5 +702,12 @@ input:focus {
 	.home__img {
 		width: 450px;
 		right: 10%;
+	}
+}
+
+
+@media screen and (max-width: 1067px) {
+	.display-mobile-none {
+		display: none;
 	}
 }
