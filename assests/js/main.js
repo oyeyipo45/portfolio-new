@@ -1,4 +1,4 @@
-const showMenu = (toggleId, navId) => {
+const showMobileNav = (toggleId, navId) => {
 	const toggle = document.getElementById(toggleId),
 		nav = document.getElementById(navId);
 
@@ -11,7 +11,7 @@ const showMenu = (toggleId, navId) => {
 
 
 
-showMenu('nav-toggle', 'nav-menu')
+showMobileNav('nav-toggle', 'nav-menu')
 
 
 const navLink = document.querySelectorAll('.nav__link')
