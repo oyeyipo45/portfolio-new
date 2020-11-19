@@ -55,3 +55,16 @@ scrl.reveal('.skills__imgt', {delay: 600})
 scrl.reveal('.work__img', {interval: 200})
 
 scrl.reveal('.contact__input', {interval: 200})
+
+
+
+
+const cover = document.querySelector(".toggle-container input");
+
+cover.addEventListener("change", (e) => {
+    if (e.target.checked) {
+        document.body.setAttribute("data-theme", "dark");
+    } else {
+        document.body.setAttribute("data-theme", "light");
+    }
+});
