@@ -9,62 +9,77 @@ const showMobileNav = (toggleId, navId) => {
 	}
 };
 
+showMobileNav('nav-toggle', 'nav-menu');
 
+const navLink = document.querySelectorAll('.nav__link');
 
-showMobileNav('nav-toggle', 'nav-menu')
+function linkAction() {
+	navLink.forEach((n) => n.classList.remove('active'));
+	this.classList.add('active');
 
-
-const navLink = document.querySelectorAll('.nav__link')
-
-
-function linkAction(){
-    navLink.forEach(n => n.classList.remove('active'))
-    this.classList.add('active')
-
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show')
+	const navMenu = document.getElementById('nav-menu');
+	navMenu.classList.remove('show');
 }
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach((n) => n.addEventListener('click', linkAction));
 
+const scrl = ScrollReveal({
+	origin: 'top',
+	distance: '80px',
+	duration: 2000,
+	reset: true,
+});
 
+scrl.reveal('.home__title', {});
+scrl.reveal('.button', { delay: 200 });
+scrl.reveal('.home__img', { delay: 400 });
+scrl.reveal('.home__social-icon', { interval: 200 });
 
-const scrl = ScrollReveal ({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-})
+scrl.reveal('.about__img', {});
+scrl.reveal('.about__subtitle', { delay: 200 });
+scrl.reveal('.about__text', { delay: 400 });
 
+scrl.reveal('.skills__subtitle', {});
+scrl.reveal('.skills__text', { delay: 200 });
+scrl.reveal('.skills__data', { interval: 200 });
+scrl.reveal('.skills__imgt', { delay: 600 });
 
-scrl.reveal('.home__title', {})
-scrl.reveal('.button', {delay: 200})
-scrl.reveal('.home__img', {delay: 400})
-scrl.reveal('.home__social-icon', {interval: 200})
+scrl.reveal('.work__img', { interval: 200 });
 
+scrl.reveal('.contact__input', { interval: 200 });
 
-scrl.reveal('.about__img', {})
-scrl.reveal('.about__subtitle', {delay: 200})
-scrl.reveal('.about__text', {delay: 400})
+const cover = document.querySelector('.toggle-container input');
 
-scrl.reveal('.skills__subtitle', {})
-scrl.reveal('.skills__text', {delay: 200})
-scrl.reveal('.skills__data', {interval: 200})
-scrl.reveal('.skills__imgt', {delay: 600})
+document.addEventListener('DOMContentLoaded', () => {
+	let darkMode = false;
+	const toggle = document.getElementById('toggle');
+	console.log(localStorage.getItem('data-theme'));
+	console.log(localStorage.getItem('checked'));
 
-scrl.reveal('.work__img', {interval: 200})
+	//preference from localStorage should overwrite
+	if (localStorage.getItem('data-theme') === 'dark') {
+		darkMode = true;
+		toggle.checked = true;
+	} else if (localStorage.getItem('data-theme') === 'light') {
+		darkMode = false;
+		toggle.checked = false;
+	}
 
-scrl.reveal('.contact__input', {interval: 200})
+	if (darkMode) {
+		document.body.setAttribute('data-theme', 'dark');
+	}
 
-
-
-
-const cover = document.querySelector(".toggle-container input");
-
-cover.addEventListener("change", (e) => {
-    if (e.target.checked) {
-        document.body.setAttribute("data-theme", "dark");
-    } else {
-        document.body.setAttribute("data-theme", "light");
-    }
+	cover.addEventListener('change', (e) => {
+		if (e.target.checked) {
+			document.body.setAttribute('data-theme', 'dark');
+			localStorage.setItem('data-theme', 'dark');
+			toggle.checked = true;
+			localStorage.setItem('checked', 'checked');
+		} else {
+			document.body.setAttribute('data-theme', 'light');
+			localStorage.setItem('data-theme', 'light');
+			toggle.checked = false;
+			localStorage.setItem('checked', 'unchecked');
+		}
+	});
 });
