@@ -53,8 +53,6 @@ const cover = document.querySelector('.toggle-container input');
 document.addEventListener('DOMContentLoaded', () => {
 	let darkMode = false;
 	const toggle = document.getElementById('toggle');
-	console.log(localStorage.getItem('data-theme'));
-	console.log(localStorage.getItem('checked'));
 
 	//preference from localStorage should overwrite
 	if (localStorage.getItem('data-theme') === 'dark') {
