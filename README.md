@@ -3,7 +3,7 @@
 ##Live version Here https://oyeyipo45.netlify.app/
 
 
- This is your first introduction to Damilola as a software Developer Based out of Lagos, Nigeria.
+ This is your first introduction to Damilola a software Developer working out of Lagos, Nigeria.
  
  ## WHERE MY CONPETENCES LIE
     1.  Html
